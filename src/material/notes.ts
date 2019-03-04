@@ -1,11 +1,13 @@
 import { NoteSpec } from '@musical-patterns/compiler'
 import {
+    PitchOnly,
     SILENT,
     STANDARD_DURATIONS_SCALE_INDEX,
     STANDARD_PITCH_INDEX_INDICATING_REST,
     STANDARD_PITCH_SCALE_INDEX,
 } from '@musical-patterns/pattern'
 import {
+    ContourElement,
     FOUR_FIFTHS,
     from,
     Ordinal,
@@ -14,9 +16,9 @@ import {
     translateFromOneIndexedToZeroIndexed,
 } from '@musical-patterns/utilities'
 
-const buildNoteSpec: (blockElement: number) => NoteSpec =
-    (blockElement: number): NoteSpec => {
-        const pitchIndex: Ordinal = translateFromOneIndexedToZeroIndexed(to.Ordinal(blockElement))
+const buildNoteSpec: (contourElement: ContourElement<PitchOnly>) => NoteSpec =
+    ([ pitch ]: ContourElement<PitchOnly>): NoteSpec => {
+        const pitchIndex: Ordinal = translateFromOneIndexedToZeroIndexed(to.Ordinal(pitch))
 
         if (pitchIndex === STANDARD_PITCH_INDEX_INDICATING_REST) {
             return {
