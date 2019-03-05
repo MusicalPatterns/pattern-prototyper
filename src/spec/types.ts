@@ -1,14 +1,19 @@
-import { RangedSpecPropertyAttributes, SpecAttributes, StandardSpec } from '@musical-patterns/pattern'
-import { Block, Scalar } from '@musical-patterns/utilities'
+import {
+    RangedSpecPropertyAttributes,
+    SpecAttributes,
+    StandardSpec,
+    StringedSpecPropertyAttributes,
+} from '@musical-patterns/pattern'
+import { Block } from '@musical-patterns/utilities'
 
 interface PrototyperSpec extends StandardSpec {
     block: Block,
-    scalars: Scalar[],
+    scalarStrings: string[],
 }
 
 interface PrototyperSpecAttributes extends SpecAttributes<PrototyperSpec> {
     block: RangedSpecPropertyAttributes,
-    scalars: RangedSpecPropertyAttributes,
+    scalarStrings: StringedSpecPropertyAttributes,
 }
 
 export {

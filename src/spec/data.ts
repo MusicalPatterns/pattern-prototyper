@@ -10,7 +10,7 @@ import {
     PROTOTYPER_INITIAL_BASE_DURATION,
     PROTOTYPER_INITIAL_BASE_FREQUENCY,
     PROTOTYPER_INITIAL_BLOCK,
-    PROTOTYPER_INITIAL_SCALARS,
+    PROTOTYPER_INITIAL_SCALAR_STRINGS,
 } from './constants'
 import { PrototyperSpec, PrototyperSpecAttributes } from './types'
 import { validationFunction } from './validation'
@@ -20,7 +20,7 @@ const initial: PrototyperSpec = {
     [ StandardSpecProperties.BASE_DURATION ]: PROTOTYPER_INITIAL_BASE_DURATION,
     [ StandardSpecProperties.BASE_FREQUENCY ]: PROTOTYPER_INITIAL_BASE_FREQUENCY,
     block: PROTOTYPER_INITIAL_BLOCK,
-    scalars: PROTOTYPER_INITIAL_SCALARS,
+    scalarStrings: PROTOTYPER_INITIAL_SCALAR_STRINGS,
 }
 
 const attributes: PrototyperSpecAttributes = {
@@ -34,13 +34,9 @@ const attributes: PrototyperSpecAttributes = {
         isArrayed: true,
         specPropertyType: SpecPropertyType.RANGED,
     },
-    scalars: {
-        constraint: {
-            min: 0,
-        },
-        hideInput: RangedInputType.RANGE,
+    scalarStrings: {
         isArrayed: true,
-        specPropertyType: SpecPropertyType.RANGED,
+        specPropertyType: SpecPropertyType.STRINGED,
     },
 }
 
