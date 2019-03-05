@@ -1,48 +1,14 @@
-import {
-    RangedInputType,
-    SpecData,
-    SpecPropertyType,
-    standardInitialSpec,
-    standardSpecAttributes,
-    StandardSpecProperties,
-} from '@musical-patterns/pattern'
-import {
-    PROTOTYPER_INITIAL_BASE_DURATION,
-    PROTOTYPER_INITIAL_BASE_FREQUENCY,
-    PROTOTYPER_INITIAL_BLOCK,
-    PROTOTYPER_INITIAL_SCALAR_STRINGS,
-} from './constants'
-import { PrototyperSpec, PrototyperSpecAttributes } from './types'
+import { SpecData } from '@musical-patterns/pattern'
+import { attributes } from './attributes'
+import { initial } from './initial'
+import { presets } from './presets'
+import { PrototyperSpec } from './types'
 import { validationFunction } from './validation'
-
-const initial: PrototyperSpec = {
-    ...standardInitialSpec,
-    [ StandardSpecProperties.BASE_DURATION ]: PROTOTYPER_INITIAL_BASE_DURATION,
-    [ StandardSpecProperties.BASE_FREQUENCY ]: PROTOTYPER_INITIAL_BASE_FREQUENCY,
-    block: PROTOTYPER_INITIAL_BLOCK,
-    scalarStrings: PROTOTYPER_INITIAL_SCALAR_STRINGS,
-}
-
-const attributes: PrototyperSpecAttributes = {
-    ...standardSpecAttributes,
-    block: {
-        constraint: {
-            integer: true,
-            min: 0,
-        },
-        hideInput: RangedInputType.RANGE,
-        isArrayed: true,
-        specPropertyType: SpecPropertyType.RANGED,
-    },
-    scalarStrings: {
-        isArrayed: true,
-        specPropertyType: SpecPropertyType.STRINGED,
-    },
-}
 
 const specData: SpecData<PrototyperSpec> = {
     attributes,
     initial,
+    presets,
     validationFunction,
 }
 
