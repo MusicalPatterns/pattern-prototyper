@@ -5,3 +5,8 @@ export { pattern } from './patterns'
 import * as snapshot from './snapshot.json'
 
 export { snapshot }
+
+export {
+    validationFunction,
+    PrototyperSpec,
+} from './spec/indexForTest'

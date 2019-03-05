@@ -1,4 +1,9 @@
-import { SpecValidationFunction, SpecValidationResults } from '@musical-patterns/pattern'
+import {
+    ArrayedPropertyInvalidSpecMessage,
+    SingularPropertyInvalidSpecMessage,
+    SpecValidationFunction,
+    SpecValidationResults,
+} from '@musical-patterns/pattern'
 import { PrototyperSpec } from './types'
 
 const validationFunction: SpecValidationFunction<PrototyperSpec> =
@@ -8,13 +13,23 @@ const validationFunction: SpecValidationFunction<PrototyperSpec> =
                 blockElement <= spec.scalars.length,
         )
 
-        if (!blockInRange) {
-            return {
-                block: 'index is higher than count of scalars',
-            }
+        if (blockInRange) {
+            return undefined
         }
 
-        return undefined
+        const invalidSpecMessagesForBlock: ArrayedPropertyInvalidSpecMessage = spec.block.map(
+            (blockElement: number): SingularPropertyInvalidSpecMessage => {
+                if (blockElement > spec.scalars.length) {
+                    return 'index is higher than count of scalars'
+                }
+
+                return undefined
+            },
+        )
+
+        return {
+            block: invalidSpecMessagesForBlock,
+        }
     }
 
 export {
