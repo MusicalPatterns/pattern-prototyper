@@ -14,28 +14,6 @@
       },
       {
         "duration": 200,
-        "gain": 0,
-        "frequency": 1,
-        "position": [
-          0,
-          0,
-          0
-        ],
-        "sustain": 199.9
-      },
-      {
-        "duration": 200,
-        "gain": 1,
-        "frequency": 360,
-        "position": [
-          0,
-          0,
-          0
-        ],
-        "sustain": 160
-      },
-      {
-        "duration": 200,
         "gain": 1,
         "frequency": 320,
         "position": [
@@ -176,10 +154,46 @@
           0
         ],
         "sustain": 160
+      },
+      {
+        "duration": 200,
+        "gain": 1,
+        "frequency": 360,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "sustain": 160
+      },
+      {
+        "duration": 200,
+        "gain": 0,
+        "frequency": 1,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "sustain": 199.9
       }
     ],
     "voiceSpec": {
       "timbreName": "SQUARE",
+      "voiceType": "OSCILLATOR"
+    }
+  },
+  {
+    "notes": [],
+    "voiceSpec": {
+      "timbreName": "SAW",
+      "voiceType": "OSCILLATOR"
+    }
+  },
+  {
+    "notes": [],
+    "voiceSpec": {
+      "timbreName": "TRIANGLE",
       "voiceType": "OSCILLATOR"
     }
   }
