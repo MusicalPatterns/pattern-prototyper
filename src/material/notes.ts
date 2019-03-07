@@ -7,6 +7,7 @@ import {
     STANDARD_PITCH_SCALE_INDEX,
 } from '@musical-patterns/pattern'
 import {
+    Amplitude,
     ContourElement,
     FOUR_FIFTHS,
     from,
@@ -26,7 +27,7 @@ const buildNoteSpec: (contourElement: ContourElement<PitchOnly>) => NoteSpec =
                     scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
                 },
                 gainSpec: {
-                    scalar: from.Amplitude(SILENT) as Scalar,
+                    scalar: from.Amplitude<Scalar, Scalar<Amplitude>>(SILENT),
                 },
             }
         }

@@ -1,12 +1,12 @@
 import {
     RangedSpecPropertyAttributes,
+    Spec,
     SpecAttributes,
-    StandardSpec,
     StringedSpecPropertyAttributes,
 } from '@musical-patterns/pattern'
 import { Block } from '@musical-patterns/utilities'
 
-interface PrototyperSpec extends StandardSpec {
+interface PrototyperSpec extends Spec {
     block: Block,
     scalarStrings: string[],
 }
