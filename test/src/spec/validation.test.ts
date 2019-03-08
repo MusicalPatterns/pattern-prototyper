@@ -1,4 +1,4 @@
-import { SpecValidationResults } from '@musical-patterns/pattern'
+import { ValidationResults } from '@musical-patterns/pattern'
 import { to } from '@musical-patterns/utilities'
 import { PrototyperSpec, validationFunction } from '../../../src/indexForTest'
 
@@ -10,7 +10,7 @@ describe('validation', () => {
             otherOtherBlock: to.Block([ 0, 1, 2 ]),
             scalarStrings: [ '1', '2', '3' ],
         }
-        const validationResults: SpecValidationResults<PrototyperSpec> = validationFunction(spec)
+        const validationResults: ValidationResults<PrototyperSpec> = validationFunction(spec)
 
         expect(validationResults)
             .toBeUndefined()
@@ -23,7 +23,7 @@ describe('validation', () => {
             otherOtherBlock: to.Block([ 0, 1, 2 ]),
             scalarStrings: [ '1', '2', '3' ],
         }
-        const validationResults: SpecValidationResults<PrototyperSpec> = validationFunction(spec)
+        const validationResults: ValidationResults<PrototyperSpec> = validationFunction(spec)
 
         const expectedInvalidMessage: string = 'index is higher than count of scalarStrings'
         expect(validationResults)
@@ -49,7 +49,7 @@ describe('validation', () => {
                 otherOtherBlock: to.Block([]),
                 scalarStrings: [ '1/2^3%7', 'hellothere', '3.5875' ],
             }
-            const validationResults: SpecValidationResults<PrototyperSpec> = validationFunction(spec)
+            const validationResults: ValidationResults<PrototyperSpec> = validationFunction(spec)
 
             expect(validationResults)
                 .toEqual({

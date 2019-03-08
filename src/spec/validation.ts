@@ -1,27 +1,23 @@
-import {
-    SingularPropertyInvalidSpecMessage,
-    SpecValidationFunction,
-    SpecValidationResults,
-} from '@musical-patterns/pattern'
+import { SingularValidationResult, ValidationFunction, ValidationResults } from '@musical-patterns/pattern'
 import { Block, evaluate, isUndefined } from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecProperty, PrototyperSpecValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
     (block: unknown): block is Block =>
-        block instanceof Array && block.length > 0 && typeof block[0] === 'number'
+        block instanceof Array && block.length > 0 && typeof block[ 0 ] === 'number'
 
 const validateBlock:
     (
         prototyperSpec: PrototyperSpec,
-        previousResults: SpecValidationResults<PrototyperSpec>,
+        previousValidationResults: ValidationResults<PrototyperSpec>,
         blockKey: PrototyperSpecProperty,
-    ) => SpecValidationResults<PrototyperSpec> =
+    ) => ValidationResults<PrototyperSpec> =
     (
         prototyperSpec: PrototyperSpec,
-        previousResults: SpecValidationResults<PrototyperSpec>,
+        previousValidationResults: ValidationResults<PrototyperSpec>,
         blockKey: PrototyperSpecProperty,
-    ): SpecValidationResults<PrototyperSpec> => {
-        let results: SpecValidationResults = previousResults
+    ): ValidationResults<PrototyperSpec> => {
+        let validationResults: ValidationResults = previousValidationResults
         const block: PrototyperSpecValue = prototyperSpec[ blockKey ]
         if (!isBlockNeedingValidation(block)) {
             return undefined
@@ -33,11 +29,11 @@ const validateBlock:
         )
 
         if (!blockInRange) {
-            if (isUndefined(results)) {
-                results = {}
+            if (isUndefined(validationResults)) {
+                validationResults = {}
             }
-            results[ blockKey ] = block.map(
-                (blockElement: number): SingularPropertyInvalidSpecMessage => {
+            validationResults[ blockKey ] = block.map(
+                (blockElement: number): SingularValidationResult => {
                     if (blockElement > prototyperSpec.scalarStrings.length) {
                         return 'index is higher than count of scalarStrings'
                     }
@@ -47,34 +43,35 @@ const validateBlock:
             )
         }
 
-        return results
+        return validationResults
     }
 
-const validationFunction: SpecValidationFunction<PrototyperSpec> =
-    (spec: PrototyperSpec): SpecValidationResults<PrototyperSpec> => {
-        let results: SpecValidationResults<PrototyperSpec> = undefined
+const validationFunction: ValidationFunction<PrototyperSpec> =
+    (prototyperSpec: PrototyperSpec): ValidationResults<PrototyperSpec> => {
+        let validationResults: ValidationResults<PrototyperSpec> = undefined
 
-        results = validateBlock(spec, results, PrototyperSpecProperty.BLOCK)
-        results = validateBlock(spec, results, PrototyperSpecProperty.OTHER_BLOCK)
-        results = validateBlock(spec, results, PrototyperSpecProperty.OTHER_OTHER_BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.OTHER_BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.OTHER_OTHER_BLOCK)
 
-        const scalarStringsAreAllParseable: boolean = spec.scalarStrings.every((scalarString: string): boolean => {
-            try {
-                evaluate(scalarString)
-            }
-            catch (e) {
-                return false
-            }
+        const scalarStringsAreAllParseable: boolean = prototyperSpec.scalarStrings.every(
+            (scalarString: string): boolean => {
+                try {
+                    evaluate(scalarString)
+                }
+                catch (e) {
+                    return false
+                }
 
-            return true
-        })
+                return true
+            })
 
         if (!scalarStringsAreAllParseable) {
-            if (isUndefined(results)) {
-                results = {}
+            if (isUndefined(validationResults)) {
+                validationResults = {}
             }
-            results.scalarStrings = spec.scalarStrings.map(
-                (scalarString: string): SingularPropertyInvalidSpecMessage => {
+            validationResults.scalarStrings = prototyperSpec.scalarStrings.map(
+                (scalarString: string): SingularValidationResult => {
                     try {
                         evaluate(scalarString)
                     }
@@ -87,7 +84,7 @@ const validationFunction: SpecValidationFunction<PrototyperSpec> =
             )
         }
 
-        return results && Object.keys(results).length ? results : undefined
+        return validationResults && Object.keys(validationResults).length ? validationResults : undefined
     }
 
 export {
