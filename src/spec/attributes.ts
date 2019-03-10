@@ -1,23 +1,18 @@
-import {
-    RangedInputType,
-    SpecPropertyAttributes,
-    SpecPropertyType,
-    standardSpecAttributes,
-} from '@musical-patterns/pattern'
-import { PrototyperSpecAttributes } from './types'
+import { PropertyAttributes, PropertyType, RangedInputType, standardAttributes } from '@musical-patterns/pattern'
+import { PrototyperAttributes } from './types'
 
-const blockAttributes: SpecPropertyAttributes = {
+const blockAttributes: PropertyAttributes = {
     constraint: {
         integer: true,
         min: 0,
     },
     hideInput: RangedInputType.RANGE,
     isArrayed: true,
-    specPropertyType: SpecPropertyType.RANGED,
+    propertyType: PropertyType.RANGED,
 }
 
-const attributes: PrototyperSpecAttributes = {
-    ...standardSpecAttributes,
+const attributes: PrototyperAttributes = {
+    ...standardAttributes,
     block: {
         ...blockAttributes,
         formattedName: 'first note set',
@@ -33,7 +28,7 @@ const attributes: PrototyperSpecAttributes = {
     scalarStrings: {
         formattedName: 'scale',
         isArrayed: true,
-        specPropertyType: SpecPropertyType.STRINGED,
+        propertyType: PropertyType.STRINGED,
     },
 }
 

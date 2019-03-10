@@ -1,6 +1,6 @@
-export { specData } from './data'
+export { data } from './data'
 
 export {
     PrototyperSpec,
-    PrototyperSpecProperty,
+    PrototyperProperty,
 } from './types'

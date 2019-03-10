@@ -1,4 +1,4 @@
-import { standardInitialSpec, StandardSpecProperties } from '@musical-patterns/pattern'
+import { standardInitialSpec, StandardProperty } from '@musical-patterns/pattern'
 import {
     PROTOTYPER_INITIAL_BASE_DURATION,
     PROTOTYPER_INITIAL_BASE_FREQUENCY,
@@ -11,8 +11,8 @@ import { PrototyperSpec } from './types'
 
 const initial: PrototyperSpec = {
     ...standardInitialSpec,
-    [ StandardSpecProperties.BASE_DURATION ]: PROTOTYPER_INITIAL_BASE_DURATION,
-    [ StandardSpecProperties.BASE_FREQUENCY ]: PROTOTYPER_INITIAL_BASE_FREQUENCY,
+    [ StandardProperty.BASE_DURATION ]: PROTOTYPER_INITIAL_BASE_DURATION,
+    [ StandardProperty.BASE_FREQUENCY ]: PROTOTYPER_INITIAL_BASE_FREQUENCY,
     block: PROTOTYPER_INITIAL_BLOCK,
     otherBlock: PROTOTYPER_INITIAL_OTHER_BLOCK,
     otherOtherBlock: PROTOTYPER_INITIAL_OTHER_OTHER_BLOCK,

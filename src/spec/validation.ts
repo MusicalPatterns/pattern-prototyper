@@ -1,6 +1,6 @@
 import { SingularValidationResult, ValidationFunction, ValidationResults } from '@musical-patterns/pattern'
 import { Block, evaluate, isUndefined } from '@musical-patterns/utilities'
-import { PrototyperSpec, PrototyperSpecProperty, PrototyperSpecValue } from './types'
+import { PrototyperProperty, PrototyperSpec, PrototyperValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
     (block: unknown): block is Block =>
@@ -10,15 +10,15 @@ const validateBlock:
     (
         prototyperSpec: PrototyperSpec,
         previousValidationResults: ValidationResults<PrototyperSpec>,
-        blockKey: PrototyperSpecProperty,
+        blockKey: PrototyperProperty,
     ) => ValidationResults<PrototyperSpec> =
     (
         prototyperSpec: PrototyperSpec,
         previousValidationResults: ValidationResults<PrototyperSpec>,
-        blockKey: PrototyperSpecProperty,
+        blockKey: PrototyperProperty,
     ): ValidationResults<PrototyperSpec> => {
         let validationResults: ValidationResults = previousValidationResults
-        const block: PrototyperSpecValue = prototyperSpec[ blockKey ]
+        const block: PrototyperValue = prototyperSpec[ blockKey ]
         if (!isBlockNeedingValidation(block)) {
             return undefined
         }
@@ -50,9 +50,9 @@ const validationFunction: ValidationFunction<PrototyperSpec> =
     (prototyperSpec: PrototyperSpec): ValidationResults<PrototyperSpec> => {
         let validationResults: ValidationResults<PrototyperSpec> = undefined
 
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.BLOCK)
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.OTHER_BLOCK)
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperSpecProperty.OTHER_OTHER_BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.OTHER_BLOCK)
+        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.OTHER_OTHER_BLOCK)
 
         const scalarStringsAreAllParseable: boolean = prototyperSpec.scalarStrings.every(
             (scalarString: string): boolean => {

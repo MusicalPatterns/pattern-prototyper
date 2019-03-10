@@ -2,7 +2,7 @@ import { Material } from '@musical-patterns/compiler'
 import { Id, Metadata, Pattern, Patterns } from '@musical-patterns/pattern'
 import { buildEntities, buildScales } from './material'
 import { post } from './metadata'
-import { PrototyperSpec, specData } from './spec'
+import { data, PrototyperSpec } from './spec'
 
 const material: Material = {
     buildEntitiesFunction: buildEntities,
@@ -19,10 +19,10 @@ const metadata: Metadata = {
 }
 
 const pattern: Pattern<PrototyperSpec> = {
+    data,
     id: Id.PROTOTYPER,
     material,
     metadata,
-    specData,
 }
 
 const patterns: Partial<Patterns> = {
