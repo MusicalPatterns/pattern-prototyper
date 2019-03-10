@@ -1,4 +1,4 @@
-import { NoteSpec } from '@musical-patterns/compiler'
+import { Note } from '@musical-patterns/compiler'
 import {
     PitchOnly,
     SILENT,
@@ -17,30 +17,30 @@ import {
     translateFromOneIndexedToZeroIndexed,
 } from '@musical-patterns/utilities'
 
-const buildNoteSpec: (contourElement: ContourElement<PitchOnly>) => NoteSpec =
-    ([ pitch ]: ContourElement<PitchOnly>): NoteSpec => {
+const buildNote: (contourElement: ContourElement<PitchOnly>) => Note =
+    ([ pitch ]: ContourElement<PitchOnly>): Note => {
         const pitchIndex: Ordinal = translateFromOneIndexedToZeroIndexed(to.Ordinal(pitch))
 
         if (pitchIndex === STANDARD_PITCH_INDEX_INDICATING_REST) {
             return {
-                durationSpec: {
+                duration: {
                     scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
                 },
-                gainSpec: {
+                gain: {
                     scalar: from.Amplitude<Scalar, Scalar<Amplitude>>(SILENT),
                 },
             }
         }
 
         return {
-            durationSpec: {
+            duration: {
                 scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
             },
-            pitchSpec: {
+            pitch: {
                 index: pitchIndex,
                 scaleIndex: STANDARD_PITCH_SCALE_INDEX,
             },
-            sustainSpec: {
+            sustain: {
                 scalar: FOUR_FIFTHS,
                 scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
             },
@@ -48,5 +48,5 @@ const buildNoteSpec: (contourElement: ContourElement<PitchOnly>) => NoteSpec =
     }
 
 export {
-    buildNoteSpec,
+    buildNote,
 }

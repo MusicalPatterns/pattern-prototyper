@@ -1,6 +1,6 @@
 [
   {
-    "notes": [
+    "sounds": [
       {
         "duration": 200,
         "gain": 1,
@@ -178,23 +178,23 @@
         "sustain": 199.9
       }
     ],
-    "voiceSpec": {
+    "sourceRequest": {
       "timbreName": "SQUARE",
-      "voiceType": "OSCILLATOR"
+      "sourceType": "OSCILLATOR"
     }
   },
   {
-    "notes": [],
-    "voiceSpec": {
+    "sounds": [],
+    "sourceRequest": {
       "timbreName": "SAW",
-      "voiceType": "OSCILLATOR"
+      "sourceType": "OSCILLATOR"
     }
   },
   {
-    "notes": [],
-    "voiceSpec": {
+    "sounds": [],
+    "sourceRequest": {
       "timbreName": "TRIANGLE",
-      "voiceType": "OSCILLATOR"
+      "sourceType": "OSCILLATOR"
     }
   }
 ]
