@@ -1,5 +1,5 @@
 import { Preset } from '@musical-patterns/pattern'
-import { DictionaryOf } from '@musical-patterns/utilities'
+import { ObjectOf } from '@musical-patterns/utilities'
 import {
     PROTOTYPER_POLYRHYTHM_PRESET_BLOCK,
     PROTOTYPER_POLYRHYTHM_PRESET_OTHER_BLOCK,
@@ -8,7 +8,7 @@ import {
 import { initial } from './initial'
 import { PrototyperSpec } from './types'
 
-const presets: DictionaryOf<Preset<PrototyperSpec>> = {
+const presets: ObjectOf<Preset<PrototyperSpec>> = {
     melodic: {
         description: '5453452345123450',
         order: 0,
