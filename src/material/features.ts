@@ -17,7 +17,7 @@ import {
     translateFromOneIndexedToZeroIndexed,
 } from '@musical-patterns/utilities'
 
-const buildNote: (contourElement: ContourElement<PitchOnly>) => Note =
+const computeNote: (contourElement: ContourElement<PitchOnly>) => Note =
     ([ pitch ]: ContourElement<PitchOnly>): Note => {
         const pitchIndex: Ordinal = translateFromOneIndexedToZeroIndexed(to.Ordinal(pitch))
 
@@ -48,5 +48,5 @@ const buildNote: (contourElement: ContourElement<PitchOnly>) => Note =
     }
 
 export {
-    buildNote,
+    computeNote,
 }
