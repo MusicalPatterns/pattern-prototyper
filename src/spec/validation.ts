@@ -1,6 +1,6 @@
-import { SingularValidationResult, ValidationFunction, ValidationResults } from '@musical-patterns/pattern'
+import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/pattern'
 import { Block, evaluate, isUndefined } from '@musical-patterns/utilities'
-import { PrototyperProperty, PrototyperSpec, PrototyperValue } from './types'
+import { PrototyperSpec, PrototyperSpecs, PrototyperValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
     (block: unknown): block is Block =>
@@ -8,33 +8,33 @@ const isBlockNeedingValidation: (block: unknown) => block is Block =
 
 const validateBlock:
     (
-        prototyperSpec: PrototyperSpec,
-        previousValidationResults: ValidationResults<PrototyperSpec>,
-        blockKey: PrototyperProperty,
-    ) => ValidationResults<PrototyperSpec> =
+        prototyperSpecs: PrototyperSpecs,
+        previousValidations: Validations<PrototyperSpecs>,
+        blockKey: PrototyperSpec,
+    ) => Validations<PrototyperSpecs> =
     (
-        prototyperSpec: PrototyperSpec,
-        previousValidationResults: ValidationResults<PrototyperSpec>,
-        blockKey: PrototyperProperty,
-    ): ValidationResults<PrototyperSpec> => {
-        let validationResults: ValidationResults = previousValidationResults
-        const block: PrototyperValue = prototyperSpec[ blockKey ]
+        prototyperSpecs: PrototyperSpecs,
+        previousValidations: Validations<PrototyperSpecs>,
+        blockKey: PrototyperSpec,
+    ): Validations<PrototyperSpecs> => {
+        let validations: Validations = previousValidations
+        const block: PrototyperValue = prototyperSpecs[ blockKey ]
         if (!isBlockNeedingValidation(block)) {
             return undefined
         }
 
         const blockInRange: boolean = block.every(
             (blockElement: number): boolean =>
-                blockElement <= prototyperSpec.scalarStrings.length,
+                blockElement <= prototyperSpecs.scalarStrings.length,
         )
 
         if (!blockInRange) {
-            if (isUndefined(validationResults)) {
-                validationResults = {}
+            if (isUndefined(validations)) {
+                validations = {}
             }
-            validationResults[ blockKey ] = block.map(
-                (blockElement: number): SingularValidationResult => {
-                    if (blockElement > prototyperSpec.scalarStrings.length) {
+            validations[ blockKey ] = block.map(
+                (blockElement: number): SingularValidation => {
+                    if (blockElement > prototyperSpecs.scalarStrings.length) {
                         return 'index is higher than count of scalarStrings'
                     }
 
@@ -43,18 +43,18 @@ const validateBlock:
             )
         }
 
-        return validationResults
+        return validations
     }
 
-const validationFunction: ValidationFunction<PrototyperSpec> =
-    (prototyperSpec: PrototyperSpec): ValidationResults<PrototyperSpec> => {
-        let validationResults: ValidationResults<PrototyperSpec> = undefined
+const computeValidations: ComputeValidations<PrototyperSpecs> =
+    (prototyperSpecs: PrototyperSpecs): Validations<PrototyperSpecs> => {
+        let validations: Validations<PrototyperSpecs> = undefined
 
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.BLOCK)
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.OTHER_BLOCK)
-        validationResults = validateBlock(prototyperSpec, validationResults, PrototyperProperty.OTHER_OTHER_BLOCK)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.OTHER_BLOCK)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.OTHER_OTHER_BLOCK)
 
-        const scalarStringsAreAllParseable: boolean = prototyperSpec.scalarStrings.every(
+        const scalarStringsAreAllParseable: boolean = prototyperSpecs.scalarStrings.every(
             (scalarString: string): boolean => {
                 try {
                     evaluate(scalarString)
@@ -67,11 +67,11 @@ const validationFunction: ValidationFunction<PrototyperSpec> =
             })
 
         if (!scalarStringsAreAllParseable) {
-            if (isUndefined(validationResults)) {
-                validationResults = {}
+            if (isUndefined(validations)) {
+                validations = {}
             }
-            validationResults.scalarStrings = prototyperSpec.scalarStrings.map(
-                (scalarString: string): SingularValidationResult => {
+            validations.scalarStrings = prototyperSpecs.scalarStrings.map(
+                (scalarString: string): SingularValidation => {
                     try {
                         evaluate(scalarString)
                     }
@@ -84,9 +84,9 @@ const validationFunction: ValidationFunction<PrototyperSpec> =
             )
         }
 
-        return validationResults && Object.keys(validationResults).length ? validationResults : undefined
+        return validations && Object.keys(validations).length ? validations : undefined
     }
 
 export {
-    validationFunction,
+    computeValidations,
 }

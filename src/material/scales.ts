@@ -1,11 +1,11 @@
 import { Scale } from '@musical-patterns/compiler'
 import { materializeStandardScales } from '@musical-patterns/pattern'
-import { PrototyperProperty, PrototyperSpec } from '../spec'
+import { PrototyperSpec, PrototyperSpecs } from '../spec'
 import { parseScalars } from './scalars'
 
-const materializeScales: (spec: PrototyperSpec) => Scale[] =
-    (spec: PrototyperSpec): Scale[] =>
-        materializeStandardScales(spec, { pitchScalars: parseScalars(spec[ PrototyperProperty.SCALAR_STRINGS ]) })
+const materializeScales: (specs: PrototyperSpecs) => Scale[] =
+    (specs: PrototyperSpecs): Scale[] =>
+        materializeStandardScales(specs, { pitchScalars: parseScalars(specs[ PrototyperSpec.SCALAR_STRINGS ]) })
 
 export {
     materializeScales,

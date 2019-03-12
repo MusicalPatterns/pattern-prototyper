@@ -1,37 +1,37 @@
 import {
-    Attributes,
-    RangedPropertyAttributes,
-    Spec,
-    StringedPropertyAttributes,
+    Configurations,
+    RangedConfiguration,
+    Specs,
+    StringedConfiguration,
 } from '@musical-patterns/pattern'
 import { Block } from '@musical-patterns/utilities'
 
-enum PrototyperProperty {
+enum PrototyperSpec {
     BLOCK = 'block',
     OTHER_BLOCK = 'otherBlock',
     OTHER_OTHER_BLOCK = 'otherOtherBlock',
     SCALAR_STRINGS = 'scalarStrings',
 }
 
-interface PrototyperSpec extends Spec {
-    [ PrototyperProperty.BLOCK ]: Block,
-    [ PrototyperProperty.OTHER_BLOCK ]: Block,
-    [ PrototyperProperty.OTHER_OTHER_BLOCK ]: Block,
-    [ PrototyperProperty.SCALAR_STRINGS ]: string[],
+interface PrototyperSpecs extends Specs {
+    [ PrototyperSpec.BLOCK ]: Block,
+    [ PrototyperSpec.OTHER_BLOCK ]: Block,
+    [ PrototyperSpec.OTHER_OTHER_BLOCK ]: Block,
+    [ PrototyperSpec.SCALAR_STRINGS ]: string[],
 }
 
-interface PrototyperAttributes extends Attributes<PrototyperSpec> {
-    [ PrototyperProperty.BLOCK ]: RangedPropertyAttributes,
-    [ PrototyperProperty.OTHER_BLOCK ]: RangedPropertyAttributes,
-    [ PrototyperProperty.OTHER_OTHER_BLOCK ]: RangedPropertyAttributes,
-    [ PrototyperProperty.SCALAR_STRINGS ]: StringedPropertyAttributes,
+interface PrototyperConfigurations extends Configurations<PrototyperSpecs> {
+    [ PrototyperSpec.BLOCK ]: RangedConfiguration,
+    [ PrototyperSpec.OTHER_BLOCK ]: RangedConfiguration,
+    [ PrototyperSpec.OTHER_OTHER_BLOCK ]: RangedConfiguration,
+    [ PrototyperSpec.SCALAR_STRINGS ]: StringedConfiguration,
 }
 
 type PrototyperValue = string[] | Block
 
 export {
+    PrototyperSpecs,
+    PrototyperConfigurations,
     PrototyperSpec,
-    PrototyperAttributes,
-    PrototyperProperty,
     PrototyperValue,
 }

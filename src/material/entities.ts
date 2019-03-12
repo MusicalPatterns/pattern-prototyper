@@ -1,25 +1,25 @@
 import { Entity, TimbreNameEnum } from '@musical-patterns/compiler'
 import { PitchOnly } from '@musical-patterns/pattern'
 import { to } from '@musical-patterns/utilities'
-import { PrototyperProperty, PrototyperSpec } from '../spec'
+import { PrototyperSpec, PrototyperSpecs } from '../spec'
 import { computeNote } from './features'
 
-const materializeEntities: (spec: PrototyperSpec) => Entity[] =
-    (spec: PrototyperSpec): Entity[] => [
+const materializeEntities: (specs: PrototyperSpecs) => Entity[] =
+    (specs: PrototyperSpecs): Entity[] => [
         {
-            notes: spec[ PrototyperProperty.BLOCK ].map(
+            notes: specs[ PrototyperSpec.BLOCK ].map(
                 (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
             ),
             timbreName: TimbreNameEnum.SQUARE,
         },
         {
-            notes: spec[ PrototyperProperty.OTHER_BLOCK ].map(
+            notes: specs[ PrototyperSpec.OTHER_BLOCK ].map(
                 (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
             ),
             timbreName: TimbreNameEnum.SAW,
         },
         {
-            notes: spec[ PrototyperProperty.OTHER_OTHER_BLOCK ].map(
+            notes: specs[ PrototyperSpec.OTHER_OTHER_BLOCK ].map(
                 (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
             ),
             timbreName: TimbreNameEnum.TRIANGLE,

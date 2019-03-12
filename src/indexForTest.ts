@@ -7,6 +7,6 @@ import * as snapshot from './snapshot.json'
 export { snapshot }
 
 export {
-    validationFunction,
-    PrototyperSpec,
+    computeValidations,
+    PrototyperSpecs,
 } from './spec/indexForTest'

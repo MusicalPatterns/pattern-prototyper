@@ -1,7 +1,7 @@
 // tslint:disable no-reaching-imports
 
-export { validationFunction } from './validation'
+export { computeValidations } from './validation'
 
 export {
-    PrototyperSpec,
+    PrototyperSpecs,
 } from './types'
