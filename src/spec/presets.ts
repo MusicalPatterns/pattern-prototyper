@@ -5,7 +5,7 @@ import {
     PROTOTYPER_POLYRHYTHM_PRESET_OTHER_BLOCK,
     PROTOTYPER_RHYTHM_PRESET_BLOCK,
 } from './constants'
-import { initial } from './initial'
+import { initial } from './initials'
 import { PrototyperSpecs } from './types'
 
 const presets: ObjectOf<Preset<PrototyperSpecs>> = {

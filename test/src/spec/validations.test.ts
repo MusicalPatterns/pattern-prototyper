@@ -2,7 +2,7 @@ import { Validations } from '@musical-patterns/pattern'
 import { to } from '@musical-patterns/utilities'
 import { computeValidations, PrototyperSpecs } from '../../../src/indexForTest'
 
-describe('validation', () => {
+describe('validations', () => {
     it('reports nothing if all is well', () => {
         const specs: PrototyperSpecs = {
             block: to.Block([ 0, 1, 2 ]),
