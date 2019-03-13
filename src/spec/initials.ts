@@ -9,7 +9,7 @@ import {
 } from './constants'
 import { PrototyperSpecs } from './types'
 
-const initial: PrototyperSpecs = {
+const initialSpecs: PrototyperSpecs = {
     ...standardInitialSpecs,
     [ StandardSpec.BASE_DURATION ]: PROTOTYPER_INITIAL_BASE_DURATION,
     [ StandardSpec.BASE_FREQUENCY ]: PROTOTYPER_INITIAL_BASE_FREQUENCY,
@@ -20,5 +20,5 @@ const initial: PrototyperSpecs = {
 }
 
 export {
-    initial,
+    initialSpecs,
 }

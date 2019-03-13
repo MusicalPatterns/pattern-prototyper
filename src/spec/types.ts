@@ -1,9 +1,4 @@
-import {
-    Configurations,
-    RangedConfiguration,
-    Specs,
-    StringedConfiguration,
-} from '@musical-patterns/pattern'
+import { Configurations, RangedConfiguration, Specs, StringedConfiguration } from '@musical-patterns/pattern'
 import { Block } from '@musical-patterns/utilities'
 
 enum PrototyperSpec {
