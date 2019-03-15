@@ -41,6 +41,31 @@ describe('validations', () => {
             })
     })
 
+    it('one spec not having any validation issues does not cause others who do to get wiped out', () => {
+        const specs: PrototyperSpecs = {
+            block: to.Block([ 4, 3, 5 ]),
+            otherBlock: to.Block([ 0, 9, 2 ]),
+            otherOtherBlock: to.Block([ ]),
+            scalarStrings: [ '1', '2', '3' ],
+        }
+        const validations: Validations<PrototyperSpecs> = computeValidations(specs)
+
+        const expectedInvalidMessage: string = 'index is higher than count of scalarStrings'
+        expect(validations)
+            .toEqual({
+                block: [
+                    expectedInvalidMessage,
+                    undefined,
+                    expectedInvalidMessage,
+                ],
+                otherBlock: [
+                    undefined,
+                    expectedInvalidMessage,
+                    undefined,
+                ],
+            })
+    })
+
     describe('un-parseable scalar strings', () => {
         it('rejects scalar strings with more than one fraction sign', () => {
             const specs: PrototyperSpecs = {

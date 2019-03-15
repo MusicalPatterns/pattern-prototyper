@@ -9,19 +9,20 @@ const isBlockNeedingValidation: (block: unknown) => block is Block =
 const validateBlock:
     (
         prototyperSpecs: PrototyperSpecs,
-        previousValidations: Validations<PrototyperSpecs>,
+        existingValidations: Validations<PrototyperSpecs>,
         blockKey: PrototyperSpec,
     ) => Validations<PrototyperSpecs> =
     (
         prototyperSpecs: PrototyperSpecs,
-        previousValidations: Validations<PrototyperSpecs>,
+        existingValidations: Validations<PrototyperSpecs>,
         blockKey: PrototyperSpec,
     ): Validations<PrototyperSpecs> => {
-        let validations: Validations = previousValidations
         const block: PrototyperValue = prototyperSpecs[ blockKey ]
         if (!isBlockNeedingValidation(block)) {
-            return undefined
+            return existingValidations
         }
+
+        let validations: Validations = existingValidations
 
         const blockInRange: boolean = block.every(
             (blockElement: number): boolean =>
