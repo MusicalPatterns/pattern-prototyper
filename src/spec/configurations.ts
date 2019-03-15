@@ -2,6 +2,7 @@ import { Configuration, InputType, RangedInputType, standardConfigurations } fro
 import { PrototyperConfigurations } from './types'
 
 const blockConfigurations: Configuration = {
+    arrayedNewFieldInitialValue: 0,
     constraint: {
         integer: true,
         min: 0,
