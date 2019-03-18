@@ -85,7 +85,7 @@ const computeValidations: ComputeValidations<PrototyperSpecs> =
             )
         }
 
-        return validations && !isEmpty(keys(validations)) ? validations : undefined
+        return validations && !isEmpty(Object.keys(validations)) ? validations : undefined
     }
 
 export {
