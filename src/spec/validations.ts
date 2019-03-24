@@ -1,5 +1,5 @@
 import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/pattern'
-import { Block, evaluate, isEmpty, isUndefined, keys } from '@musical-patterns/utilities'
+import { Block, evaluate, isEmpty, isUndefined, objectSet } from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecs, PrototyperValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
@@ -33,14 +33,19 @@ const validateBlock:
             if (isUndefined(validations)) {
                 validations = {}
             }
-            validations[ blockKey ] = block.map(
-                (blockElement: number): SingularValidation => {
-                    if (blockElement > prototyperSpecs.scalarStrings.length) {
-                        return 'index is higher than count of scalarStrings'
-                    }
 
-                    return undefined
-                },
+            objectSet(
+                validations,
+                blockKey,
+                block.map(
+                    (blockElement: number): SingularValidation => {
+                        if (blockElement > prototyperSpecs.scalarStrings.length) {
+                            return 'index is higher than count of scalarStrings'
+                        }
+
+                        return undefined
+                    },
+                ),
             )
         }
 
