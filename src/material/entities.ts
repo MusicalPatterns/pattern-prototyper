@@ -7,21 +7,33 @@ import { computeNote } from './features'
 const materializeEntities: (specs: PrototyperSpecs) => Entity[] =
     (specs: PrototyperSpecs): Entity[] => [
         {
-            notes: specs[ PrototyperSpec.BLOCK ].map(
-                (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
-            ),
+            sections: [
+                {
+                    notes: specs[ PrototyperSpec.BLOCK ].map(
+                        (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
+                    ),
+                },
+            ],
             timbreName: TimbreNameEnum.SQUARE,
         },
         {
-            notes: specs[ PrototyperSpec.OTHER_BLOCK ].map(
-                (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
-            ),
+            sections: [
+                {
+                    notes: specs[ PrototyperSpec.OTHER_BLOCK ].map(
+                        (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
+                    ),
+                },
+            ],
             timbreName: TimbreNameEnum.SAW,
         },
         {
-            notes: specs[ PrototyperSpec.OTHER_OTHER_BLOCK ].map(
-                (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
-            ),
+            sections: [
+                {
+                    notes: specs[ PrototyperSpec.OTHER_OTHER_BLOCK ].map(
+                        (blockElement: number) => computeNote(to.ContourElement<PitchOnly>([ blockElement ])),
+                    ),
+                },
+            ],
             timbreName: TimbreNameEnum.TRIANGLE,
         },
     ]
