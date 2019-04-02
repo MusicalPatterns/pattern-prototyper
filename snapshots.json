@@ -1,1170 +1,1134 @@
 {
   "initial": [
     {
-      "sections": [
+      "sounds": [
         {
-          "sounds": [
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            }
-          ]
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
         }
       ],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SQUARE"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SAW"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "TRIANGLE"
-      }
+      },
+      "segnoIndex": 0
     }
   ],
   "melodic": [
     {
-      "sections": [
+      "sounds": [
         {
-          "sounds": [
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 280,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 320,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 360,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            }
-          ]
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 280,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 320,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 360,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
         }
       ],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SQUARE"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SAW"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "TRIANGLE"
-      }
+      },
+      "segnoIndex": 0
     }
   ],
   "polyrhythm": [
     {
-      "sections": [
+      "sounds": [
         {
-          "sounds": [
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            }
-          ]
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
         }
       ],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SQUARE"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
+      "sounds": [
         {
-          "sounds": [
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 240,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            }
-          ]
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 240,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
         }
       ],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SAW"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "TRIANGLE"
-      }
+      },
+      "segnoIndex": 0
     }
   ],
   "rhythm": [
     {
-      "sections": [
+      "sounds": [
         {
-          "sounds": [
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 1,
-              "frequency": 200,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 160
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            },
-            {
-              "duration": 200,
-              "gain": 0,
-              "frequency": 1,
-              "position": [
-                0,
-                0,
-                0
-              ],
-              "sustain": 199.9
-            }
-          ]
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 1,
+          "frequency": 200,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 160
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
+        },
+        {
+          "duration": 200,
+          "gain": 0,
+          "frequency": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "sustain": 199.9
         }
       ],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SQUARE"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "SAW"
-      }
+      },
+      "segnoIndex": 0
     },
     {
-      "sections": [
-        {
-          "sounds": []
-        }
-      ],
+      "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
         "timbreName": "TRIANGLE"
-      }
+      },
+      "segnoIndex": 0
     }
   ]
 }
