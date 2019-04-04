@@ -3,6 +3,7 @@
   "totalDuration": 3200,
   "voices": [
     {
+      "delay": 0,
       "sounds": [
         {
           "duration": 200,
@@ -188,6 +189,7 @@
       "segnoIndex": 0
     },
     {
+      "delay": 0,
       "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
@@ -196,6 +198,7 @@
       "segnoIndex": -1
     },
     {
+      "delay": 0,
       "sounds": [],
       "sourceRequest": {
         "sourceType": "OSCILLATOR",
