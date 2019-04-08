@@ -1,4 +1,4 @@
-import { Entity, TimbreNameEnum } from '@musical-patterns/compiler'
+import { Entity, TimbreNameEnum } from '@musical-patterns/material'
 import { PitchOnly } from '@musical-patterns/pattern'
 import { to } from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecs } from '../spec'

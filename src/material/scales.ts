@@ -1,4 +1,4 @@
-import { Scale } from '@musical-patterns/compiler'
+import { Scale } from '@musical-patterns/material'
 import { materializeStandardScales } from '@musical-patterns/pattern'
 import { PrototyperSpec, PrototyperSpecs } from '../spec'
 import { parseScalars } from './scalars'
