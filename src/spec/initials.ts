@@ -1,4 +1,4 @@
-import { standardInitialSpecs, StandardSpec } from '@musical-patterns/pattern'
+import { standardInitialSpecs, StandardSpec } from '@musical-patterns/spec'
 import {
     PROTOTYPER_INITIAL_BASE_DURATION,
     PROTOTYPER_INITIAL_BASE_FREQUENCY,

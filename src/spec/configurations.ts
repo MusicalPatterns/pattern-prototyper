@@ -1,4 +1,4 @@
-import { Configuration, InputType, RangedInputType, standardConfigurations } from '@musical-patterns/pattern'
+import { Configuration, InputType, RangedInputType, standardConfigurations } from '@musical-patterns/spec'
 import { PrototyperConfigurations } from './types'
 
 const blockConfigurations: Configuration = {

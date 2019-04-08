@@ -1,4 +1,4 @@
-import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/pattern'
+import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/spec'
 import { Block, evaluate, isEmpty, isUndefined, objectSet } from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecs, PrototyperValue } from './types'
 

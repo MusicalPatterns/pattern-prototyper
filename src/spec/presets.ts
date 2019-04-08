@@ -1,4 +1,4 @@
-import { Preset } from '@musical-patterns/pattern'
+import { Preset } from '@musical-patterns/spec'
 import { ObjectOf } from '@musical-patterns/utilities'
 import {
     PROTOTYPER_POLYRHYTHM_PRESET_BLOCK,
