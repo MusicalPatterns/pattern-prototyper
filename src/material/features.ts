@@ -6,22 +6,11 @@ import {
     STANDARD_PITCH_INDEX_INDICATING_REST,
     STANDARD_PITCH_SCALE_INDEX,
 } from '@musical-patterns/material'
-import {
-    Amplitude,
-    ContourElement,
-    FOUR_FIFTHS,
-    from,
-    Ordinal,
-    Scalar,
-    to,
-    translateFromOneIndexedToZeroIndexed,
-} from '@musical-patterns/utilities'
+import { Amplitude, ContourElement, FOUR_FIFTHS, from, Scalar, to } from '@musical-patterns/utilities'
 
 const computeNote: (contourElement: ContourElement<PitchOnly>) => Note =
     ([ pitch ]: ContourElement<PitchOnly>): Note => {
-        const pitchIndex: Ordinal = translateFromOneIndexedToZeroIndexed(to.Ordinal(pitch))
-
-        if (pitchIndex === STANDARD_PITCH_INDEX_INDICATING_REST) {
+        if (pitch === STANDARD_PITCH_INDEX_INDICATING_REST) {
             return {
                 duration: {
                     scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
@@ -37,7 +26,7 @@ const computeNote: (contourElement: ContourElement<PitchOnly>) => Note =
                 scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
             },
             pitch: {
-                index: pitchIndex,
+                index: to.Ordinal(pitch),
                 scaleIndex: STANDARD_PITCH_SCALE_INDEX,
             },
             sustain: {

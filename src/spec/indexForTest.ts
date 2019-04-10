@@ -4,4 +4,5 @@ export { computeValidations } from './validations'
 
 export {
     PrototyperSpecs,
+    PrototyperSpec,
 } from './types'

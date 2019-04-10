@@ -580,6 +580,33 @@
         "timbreName": "TRIANGLE"
       },
       "segnoIndex": -1
+    },
+    {
+      "delay": 0,
+      "sounds": [],
+      "sourceRequest": {
+        "sourceType": "OSCILLATOR",
+        "timbreName": "TRIANGLE"
+      },
+      "segnoIndex": -1
+    },
+    {
+      "delay": 0,
+      "sounds": [],
+      "sourceRequest": {
+        "sourceType": "OSCILLATOR",
+        "timbreName": "SAW"
+      },
+      "segnoIndex": -1
+    },
+    {
+      "delay": 0,
+      "sounds": [],
+      "sourceRequest": {
+        "sourceType": "OSCILLATOR",
+        "timbreName": "SQUARE"
+      },
+      "segnoIndex": -1
     }
   ]
 }

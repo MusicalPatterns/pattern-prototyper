@@ -4,4 +4,5 @@ export { pattern } from './patterns'
 export {
     computeValidations,
     PrototyperSpecs,
+    PrototyperSpec,
 } from './spec/indexForTest'

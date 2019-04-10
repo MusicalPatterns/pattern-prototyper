@@ -34,19 +34,15 @@ const validateBlock:
                 validations = {}
             }
 
-            objectSet(
-                validations,
-                blockKey,
-                block.map(
-                    (blockElement: number): SingularValidation => {
-                        if (blockElement > prototyperSpecs.scalarStrings.length) {
-                            return 'index is higher than count of scalarStrings'
-                        }
+            objectSet(validations, blockKey, block.map(
+                (blockElement: number): SingularValidation => {
+                    if (blockElement > prototyperSpecs.scalarStrings.length) {
+                        return 'index is higher than count of scalarStrings'
+                    }
 
-                        return undefined
-                    },
-                ),
-            )
+                    return undefined
+                },
+            ))
         }
 
         return validations
@@ -56,9 +52,12 @@ const computeValidations: ComputeValidations<PrototyperSpecs> =
     (prototyperSpecs: PrototyperSpecs): Validations<PrototyperSpecs> => {
         let validations: Validations<PrototyperSpecs> = undefined
 
-        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK)
-        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.OTHER_BLOCK)
-        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.OTHER_OTHER_BLOCK)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_1)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_2)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_3)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_4)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_5)
+        validations = validateBlock(prototyperSpecs, validations, PrototyperSpec.BLOCK_6)
 
         const scalarStringsAreAllParseable: boolean = prototyperSpecs.scalarStrings.every(
             (scalarString: string): boolean => {

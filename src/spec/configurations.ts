@@ -1,11 +1,11 @@
 import { Configuration, InputType, RangedInputType, standardConfigurations } from '@musical-patterns/spec'
-import { PrototyperConfigurations } from './types'
+import { PrototyperConfigurations, PrototyperSpec } from './types'
 
 const blockConfigurations: Configuration = {
-    arrayedNewFieldInitialValue: 0,
+    arrayedNewFieldInitialValue: -1,
     constraint: {
         integer: true,
-        min: 0,
+        min: -1,
     },
     hideInput: RangedInputType.RANGE,
     inputType: InputType.RANGED,
@@ -14,17 +14,29 @@ const blockConfigurations: Configuration = {
 
 const configurations: PrototyperConfigurations = {
     ...standardConfigurations,
-    block: {
+    [ PrototyperSpec.BLOCK_1 ]: {
         ...blockConfigurations,
-        formattedName: 'first note set',
+        formattedName: 'note set one',
     },
-    otherBlock: {
+    [ PrototyperSpec.BLOCK_2 ]: {
         ...blockConfigurations,
-        formattedName: 'second note set',
+        formattedName: 'note set two',
     },
-    otherOtherBlock: {
+    [ PrototyperSpec.BLOCK_3 ]: {
         ...blockConfigurations,
-        formattedName: 'third note set',
+        formattedName: 'note set three',
+    },
+    [ PrototyperSpec.BLOCK_4 ]: {
+        ...blockConfigurations,
+        formattedName: 'note set four',
+    },
+    [ PrototyperSpec.BLOCK_5 ]: {
+        ...blockConfigurations,
+        formattedName: 'note set five',
+    },
+    [ PrototyperSpec.BLOCK_6 ]: {
+        ...blockConfigurations,
+        formattedName: 'note set six',
     },
     scalarStrings: {
         formattedName: 'scale',
