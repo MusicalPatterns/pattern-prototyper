@@ -2,8 +2,8 @@
 
 import { Block, Hz, Ms, Scalar, to } from '@musical-patterns/utilities'
 
-const PROTOTYPER_INITIAL_BASE_DURATION: Scalar<Ms> = to.Ms(to.Scalar(200))
-const PROTOTYPER_INITIAL_BASE_FREQUENCY: Scalar<Hz> = to.Hz(to.Scalar(200))
+const PROTOTYPER_INITIAL_BASE_DURATION: Scalar<Ms> = to.Scalar<Ms>(200)
+const PROTOTYPER_INITIAL_BASE_FREQUENCY: Scalar<Hz> = to.Scalar<Hz>(200)
 
 const PROTOTYPER_INITIAL_BLOCK_ONE: Block = to.Block([
     4,
@@ -42,7 +42,7 @@ const CHORD_PRESET_BLOCK_FOUR: Block = to.Block([ 3 ])
 const CHORD_PRESET_BLOCK_FIVE: Block = to.Block([ 4 ])
 const CHORD_PRESET_BLOCK_SIX: Block = to.Block([ 5 ])
 const CHORD_PRESET_SCALAR_STRINGS: string[] = [ '4', '5', '6', '28/5', '7', '42/5' ]
-const CHORD_PRESET_BASE_DURATION: Scalar<Ms> = to.Scalar(to.Ms(1000))
+const CHORD_PRESET_BASE_DURATION: Scalar<Ms> = to.Scalar<Ms>(1000)
 
 export {
     PROTOTYPER_INITIAL_BASE_DURATION,
