@@ -1,10 +1,10 @@
-import { evaluate, Hz, Scalar, to } from '@musical-patterns/utilities'
+import { as, evaluate, Hz, Scalar } from '@musical-patterns/utilities'
 
 const parseScalars: (scalarStrings: string[]) => Array<Scalar<Hz>> =
     (scalarStrings: string[]): Array<Scalar<Hz>> =>
         scalarStrings
             .map(evaluate)
-            .map((evaluatedString: number) => to.Scalar<Hz>(evaluatedString))
+            .map((evaluatedString: number) => as.Scalar<Hz>(evaluatedString))
 
 export {
     parseScalars,

@@ -1,16 +1,16 @@
 import { Validations } from '@musical-patterns/spec'
-import { to } from '@musical-patterns/utilities'
+import { as } from '@musical-patterns/utilities'
 import { computeValidations, PrototyperSpec, PrototyperSpecs } from '../../../src/indexForTest'
 
 describe('validations', () => {
     it('reports nothing if all is well', () => {
         const specs: PrototyperSpecs = {
-            [ PrototyperSpec.BLOCK_1 ]: to.Block([ 0, 1, 2 ]),
-            [ PrototyperSpec.BLOCK_2 ]: to.Block([ 0, 1, 2 ]),
-            [ PrototyperSpec.BLOCK_3 ]: to.Block([ 0, 1, 2 ]),
-            [ PrototyperSpec.BLOCK_4 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_5 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_6 ]: to.Block([]),
+            [ PrototyperSpec.BLOCK_1 ]: as.Block([ 0, 1, 2 ]),
+            [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 1, 2 ]),
+            [ PrototyperSpec.BLOCK_3 ]: as.Block([ 0, 1, 2 ]),
+            [ PrototyperSpec.BLOCK_4 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_5 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_6 ]: as.Block([]),
             scalarStrings: [ '1', '2', '3' ],
         }
         const validations: Validations<PrototyperSpecs> = computeValidations(specs)
@@ -21,12 +21,12 @@ describe('validations', () => {
 
     it('reports any block indices that exceed the scalarStrings count (when adjusted from one-indexed to zero-indexed)', () => {
         const specs: PrototyperSpecs = {
-            [ PrototyperSpec.BLOCK_1 ]: to.Block([ 4, 3, 5 ]),
-            [ PrototyperSpec.BLOCK_2 ]: to.Block([ 0, 9, 2 ]),
-            [ PrototyperSpec.BLOCK_3 ]: to.Block([ 0, 1, 2 ]),
-            [ PrototyperSpec.BLOCK_4 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_5 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_6 ]: to.Block([]),
+            [ PrototyperSpec.BLOCK_1 ]: as.Block([ 4, 3, 5 ]),
+            [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 9, 2 ]),
+            [ PrototyperSpec.BLOCK_3 ]: as.Block([ 0, 1, 2 ]),
+            [ PrototyperSpec.BLOCK_4 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_5 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_6 ]: as.Block([]),
             scalarStrings: [ '1', '2', '3' ],
         }
         const validations: Validations<PrototyperSpecs> = computeValidations(specs)
@@ -49,12 +49,12 @@ describe('validations', () => {
 
     it('one spec not having any validation issues does not cause others who do to get wiped out', () => {
         const specs: PrototyperSpecs = {
-            [ PrototyperSpec.BLOCK_1 ]: to.Block([ 4, 3, 5 ]),
-            [ PrototyperSpec.BLOCK_2 ]: to.Block([ 0, 9, 2 ]),
-            [ PrototyperSpec.BLOCK_3 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_4 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_5 ]: to.Block([]),
-            [ PrototyperSpec.BLOCK_6 ]: to.Block([]),
+            [ PrototyperSpec.BLOCK_1 ]: as.Block([ 4, 3, 5 ]),
+            [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 9, 2 ]),
+            [ PrototyperSpec.BLOCK_3 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_4 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_5 ]: as.Block([]),
+            [ PrototyperSpec.BLOCK_6 ]: as.Block([]),
             scalarStrings: [ '1', '2', '3' ],
         }
         const validations: Validations<PrototyperSpecs> = computeValidations(specs)
@@ -78,12 +78,12 @@ describe('validations', () => {
     describe('un-parseable scalar strings', () => {
         it('rejects scalar strings with more than one fraction sign', () => {
             const specs: PrototyperSpecs = {
-                [ PrototyperSpec.BLOCK_1 ]: to.Block([]),
-                [ PrototyperSpec.BLOCK_2 ]: to.Block([]),
-                [ PrototyperSpec.BLOCK_3 ]: to.Block([]),
-                [ PrototyperSpec.BLOCK_4 ]: to.Block([]),
-                [ PrototyperSpec.BLOCK_5 ]: to.Block([]),
-                [ PrototyperSpec.BLOCK_6 ]: to.Block([]),
+                [ PrototyperSpec.BLOCK_1 ]: as.Block([]),
+                [ PrototyperSpec.BLOCK_2 ]: as.Block([]),
+                [ PrototyperSpec.BLOCK_3 ]: as.Block([]),
+                [ PrototyperSpec.BLOCK_4 ]: as.Block([]),
+                [ PrototyperSpec.BLOCK_5 ]: as.Block([]),
+                [ PrototyperSpec.BLOCK_6 ]: as.Block([]),
                 scalarStrings: [ '1/2^3%7', 'hellothere', '3.5875' ],
             }
             const validations: Validations<PrototyperSpecs> = computeValidations(specs)
