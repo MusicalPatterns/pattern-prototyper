@@ -10,7 +10,7 @@ import { Amplitude, as, ContourElement, FOUR_FIFTHS, notAs, Scalar } from '@musi
 
 const computeNote: (contourElement: ContourElement<PitchOnly>) => Note =
     ([ pitch ]: ContourElement<PitchOnly>): Note => {
-        if (pitch === notAs.Ordinal<Scalar>(STANDARD_PITCH_INDEX_INDICATING_REST)) {
+        if (pitch === notAs.Ordinal<Scalar[]>(STANDARD_PITCH_INDEX_INDICATING_REST)) {
             return {
                 duration: {
                     scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
@@ -26,7 +26,7 @@ const computeNote: (contourElement: ContourElement<PitchOnly>) => Note =
                 scaleIndex: STANDARD_DURATIONS_SCALE_INDEX,
             },
             pitch: {
-                index: as.Ordinal<Scalar>(pitch),
+                index: as.Ordinal<Scalar[]>(pitch),
                 scaleIndex: STANDARD_PITCH_SCALE_INDEX,
             },
             sustain: {
