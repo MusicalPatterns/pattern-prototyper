@@ -1,9 +1,9 @@
 // tslint:disable no-magic-numbers
 
-import { as, Block, Hz, Ms, Scalar } from '@musical-patterns/utilities'
+import { as, Block, Duration, Hz, Ms, Pitch, Point } from '@musical-patterns/utilities'
 
-const PROTOTYPER_INITIAL_BASE_DURATION: Scalar<Ms> = as.Scalar<Ms>(200)
-const PROTOTYPER_INITIAL_BASE_FREQUENCY: Scalar<Hz> = as.Scalar<Hz>(200)
+const PROTOTYPER_INITIAL_BASIS_DURATION: Duration = as.Translation<Point<Ms>>(200)
+const PROTOTYPER_INITIAL_BASIS_FREQUENCY: Pitch = as.Point<Hz>(200)
 
 const PROTOTYPER_INITIAL_BLOCK_ONE: Block = as.Block([
     4,
@@ -42,11 +42,11 @@ const CHORD_PRESET_BLOCK_FOUR: Block = as.Block([ 3 ])
 const CHORD_PRESET_BLOCK_FIVE: Block = as.Block([ 4 ])
 const CHORD_PRESET_BLOCK_SIX: Block = as.Block([ 5 ])
 const CHORD_PRESET_SCALAR_STRINGS: string[] = [ '4', '5', '6', '28/5', '7', '42/5' ]
-const CHORD_PRESET_BASE_DURATION: Scalar<Ms> = as.Scalar<Ms>(1000)
+const CHORD_PRESET_BASIS_DURATION: Duration = as.Translation<Point<Ms>>(1000)
 
 export {
-    PROTOTYPER_INITIAL_BASE_DURATION,
-    PROTOTYPER_INITIAL_BASE_FREQUENCY,
+    PROTOTYPER_INITIAL_BASIS_DURATION,
+    PROTOTYPER_INITIAL_BASIS_FREQUENCY,
     PROTOTYPER_INITIAL_BLOCK_ONE,
     PROTOTYPER_INITIAL_BLOCK_OTHER,
     PROTOTYPER_INITIAL_SCALAR_STRINGS,
@@ -60,5 +60,5 @@ export {
     CHORD_PRESET_BLOCK_THREE,
     CHORD_PRESET_BLOCK_TWO,
     CHORD_PRESET_SCALAR_STRINGS,
-    CHORD_PRESET_BASE_DURATION,
+    CHORD_PRESET_BASIS_DURATION,
 }
