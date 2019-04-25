@@ -1,4 +1,4 @@
-import { as, evaluate, Hz, Pitch, Scalar } from '@musical-patterns/utilities'
+import { as, evaluate, Pitch, Scalar } from '@musical-patterns/utilities'
 
 const parseScalars: (scalarStrings: string[]) => Array<Scalar<Pitch>> =
     (scalarStrings: string[]): Array<Scalar<Pitch>> =>
