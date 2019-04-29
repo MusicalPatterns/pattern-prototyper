@@ -1,9 +1,9 @@
 // tslint:disable no-magic-numbers
 
-import { as, Block, Delta, Duration, Hz, Ms, Pitch } from '@musical-patterns/utilities'
+import { as, Block, Duration, musicalAs, Pitch } from '@musical-patterns/utilities'
 
-const PROTOTYPER_INITIAL_BASIS_DURATION: Duration = as.Delta<Ms>(200)
-const PROTOTYPER_INITIAL_BASIS_FREQUENCY: Pitch = as.Point<Hz>(200)
+const PROTOTYPER_INITIAL_BASIS_DURATION: Duration = musicalAs.Duration(200)
+const PROTOTYPER_INITIAL_BASIS_FREQUENCY: Pitch = musicalAs.Pitch(200)
 
 const PROTOTYPER_INITIAL_BLOCK_ONE: Block = as.Block([
     4,
@@ -42,7 +42,7 @@ const CHORD_PRESET_BLOCK_FOUR: Block = as.Block([ 3 ])
 const CHORD_PRESET_BLOCK_FIVE: Block = as.Block([ 4 ])
 const CHORD_PRESET_BLOCK_SIX: Block = as.Block([ 5 ])
 const CHORD_PRESET_SCALAR_STRINGS: string[] = [ '4', '5', '6', '28/5', '7', '42/5' ]
-const CHORD_PRESET_BASIS_DURATION: Duration = as.Delta<Ms>(1000)
+const CHORD_PRESET_BASIS_DURATION: Duration = musicalAs.Duration(1000)
 
 export {
     PROTOTYPER_INITIAL_BASIS_DURATION,
