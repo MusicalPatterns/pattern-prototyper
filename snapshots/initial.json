@@ -173,7 +173,7 @@
         {
           "duration": 200,
           "gain": 0,
-          "tone": 1,
+          "tone": 200,
           "location": [
             0,
             0,
