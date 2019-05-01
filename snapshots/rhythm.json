@@ -8,8 +8,8 @@
         {
           "duration": 200,
           "gain": 1,
-          "frequency": 200,
-          "position": [
+          "tone": 200,
+          "location": [
             0,
             0,
             0
@@ -19,8 +19,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -30,8 +30,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -41,8 +41,8 @@
         {
           "duration": 200,
           "gain": 1,
-          "frequency": 200,
-          "position": [
+          "tone": 200,
+          "location": [
             0,
             0,
             0
@@ -52,8 +52,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -63,8 +63,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -74,8 +74,8 @@
         {
           "duration": 200,
           "gain": 1,
-          "frequency": 200,
-          "position": [
+          "tone": 200,
+          "location": [
             0,
             0,
             0
@@ -85,8 +85,8 @@
         {
           "duration": 200,
           "gain": 1,
-          "frequency": 200,
-          "position": [
+          "tone": 200,
+          "location": [
             0,
             0,
             0
@@ -96,8 +96,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -107,8 +107,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0
@@ -118,8 +118,8 @@
         {
           "duration": 200,
           "gain": 0,
-          "frequency": 1,
-          "position": [
+          "tone": 1,
+          "location": [
             0,
             0,
             0

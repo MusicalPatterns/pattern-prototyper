@@ -1,13 +1,13 @@
 import { Preset, StandardSpec } from '@musical-patterns/spec'
 import { ObjectOf } from '@musical-patterns/utilities'
 import {
-    CHORD_PRESET_BASIS_DURATION,
     CHORD_PRESET_BLOCK_FIVE,
     CHORD_PRESET_BLOCK_FOUR,
     CHORD_PRESET_BLOCK_ONE,
     CHORD_PRESET_BLOCK_SIX,
     CHORD_PRESET_BLOCK_THREE,
     CHORD_PRESET_BLOCK_TWO,
+    CHORD_PRESET_MS_PHYSICALIZATION,
     CHORD_PRESET_SCALAR_STRINGS,
     POLYRHYTHM_PRESET_BLOCK_ONE,
     POLYRHYTHM_PRESET_BLOCK_TWO,
@@ -29,7 +29,7 @@ const presets: ObjectOf<Preset<PrototyperSpecs>> = {
             [ PrototyperSpec.BLOCK_5 ]: CHORD_PRESET_BLOCK_FIVE,
             [ PrototyperSpec.BLOCK_6 ]: CHORD_PRESET_BLOCK_SIX,
             [ PrototyperSpec.SCALAR_STRINGS ]: CHORD_PRESET_SCALAR_STRINGS,
-            [ StandardSpec.BASIS_DURATION ]: CHORD_PRESET_BASIS_DURATION,
+            [ StandardSpec.MS_PHYSICALIZATION ]: CHORD_PRESET_MS_PHYSICALIZATION,
         },
     },
     melodic: {
