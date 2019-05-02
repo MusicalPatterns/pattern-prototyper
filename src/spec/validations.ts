@@ -1,10 +1,10 @@
 import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/spec'
-import { Block, evaluate, isEmpty, isUndefined, objectSet } from '@musical-patterns/utilities'
+import { Block, evaluate, isArray, isEmpty, isNumber, isUndefined, objectSet } from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecs, PrototyperValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
     (block: unknown): block is Block =>
-        block instanceof Array && !isEmpty(block) && typeof block[ 0 ] === 'number'
+        isArray(block) && !isEmpty(block) && isNumber(block[ 0 ])
 
 const validateBlock:
     (
