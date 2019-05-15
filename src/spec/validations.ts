@@ -1,17 +1,28 @@
+// tslint:disable max-file-line-count
+
 import { ComputeValidations, SingularValidation, Validations } from '@musical-patterns/spec'
-import { Block, evaluate, isArray, isEmpty, isNumber, isUndefined, objectSet } from '@musical-patterns/utilities'
+import {
+    as,
+    Block,
+    computeLength,
+    evaluate,
+    isArray,
+    isEmpty,
+    isNumber,
+    isUndefined,
+    objectSet,
+} from '@musical-patterns/utilities'
 import { PrototyperSpec, PrototyperSpecs, PrototyperValue } from './types'
 
 const isBlockNeedingValidation: (block: unknown) => block is Block =
     (block: unknown): block is Block =>
         isArray(block) && !isEmpty(block) && isNumber(block[ 0 ])
 
-const validateBlock:
-    (
-        prototyperSpecs: PrototyperSpecs,
-        existingValidations: Validations<PrototyperSpecs>,
-        blockKey: PrototyperSpec,
-    ) => Validations<PrototyperSpecs> =
+const validateBlock: (
+    prototyperSpecs: PrototyperSpecs,
+    existingValidations: Validations<PrototyperSpecs>,
+    blockKey: PrototyperSpec,
+) => Validations<PrototyperSpecs> =
     (
         prototyperSpecs: PrototyperSpecs,
         existingValidations: Validations<PrototyperSpecs>,
@@ -26,7 +37,7 @@ const validateBlock:
 
         const blockInRange: boolean = block.every(
             (blockElement: number): boolean =>
-                blockElement <= prototyperSpecs.scalarStrings.length,
+                blockElement <= as.number(computeLength(prototyperSpecs.scalarStrings)),
         )
 
         if (!blockInRange) {
@@ -36,7 +47,7 @@ const validateBlock:
 
             objectSet(validations, blockKey, block.map(
                 (blockElement: number): SingularValidation => {
-                    if (blockElement > prototyperSpecs.scalarStrings.length) {
+                    if (blockElement > as.number(computeLength(prototyperSpecs.scalarStrings))) {
                         return 'index is higher than count of scalarStrings'
                     }
 
