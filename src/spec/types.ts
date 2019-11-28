@@ -1,4 +1,4 @@
-import { Configurations, RangedConfiguration, StandardSpecs, StringedConfiguration } from '@musical-patterns/spec'
+import { Configurations, RangedConfiguration, Specs, StringedConfiguration } from '@musical-patterns/spec'
 import { Block } from '@musical-patterns/utilities'
 
 enum PrototyperSpec {
@@ -11,7 +11,7 @@ enum PrototyperSpec {
     SCALAR_STRINGS = 'scalarStrings',
 }
 
-interface PrototyperSpecs extends StandardSpecs {
+interface PrototyperSpecs extends Specs {
     [ PrototyperSpec.BLOCK_1 ]: Block,
     [ PrototyperSpec.BLOCK_2 ]: Block,
     [ PrototyperSpec.BLOCK_3 ]: Block,
