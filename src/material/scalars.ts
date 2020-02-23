@@ -4,7 +4,7 @@ const parseScalars: (scalarStrings: string[]) => Array<Scalar<Pitch>> =
     (scalarStrings: string[]): Array<Scalar<Pitch>> =>
         scalarStrings
             .map(evaluate)
-            .map((evaluatedString: number) => as.Scalar<Pitch>(evaluatedString))
+            .map((evaluatedString: number): Scalar<Pitch> => as.Scalar<Pitch>(evaluatedString))
 
 export {
     parseScalars,

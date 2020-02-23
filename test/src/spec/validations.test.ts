@@ -2,8 +2,8 @@ import { Validations } from '@musical-patterns/spec'
 import { as } from '@musical-patterns/utilities'
 import { computeValidations, PrototyperSpec, PrototyperSpecs } from '../../../src/indexForTest'
 
-describe('validations', () => {
-    it('reports nothing if all is well', () => {
+describe('validations', (): void => {
+    it('reports nothing if all is well', (): void => {
         const specs: PrototyperSpecs = {
             [ PrototyperSpec.BLOCK_1 ]: as.Block([ 0, 1, 2 ]),
             [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 1, 2 ]),
@@ -19,7 +19,7 @@ describe('validations', () => {
             .toBeUndefined()
     })
 
-    it('reports any block indices that exceed the scalarStrings count (when adjusted from one-indexed to zero-indexed)', () => {
+    it('reports any block indices that exceed the scalarStrings count (when adjusted from one-indexed to zero-indexed)', (): void => {
         const specs: PrototyperSpecs = {
             [ PrototyperSpec.BLOCK_1 ]: as.Block([ 4, 3, 5 ]),
             [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 9, 2 ]),
@@ -47,7 +47,7 @@ describe('validations', () => {
             })
     })
 
-    it('one spec not having any validation issues does not cause others who do to get wiped out', () => {
+    it('one spec not having any validation issues does not cause others who do to get wiped out', (): void => {
         const specs: PrototyperSpecs = {
             [ PrototyperSpec.BLOCK_1 ]: as.Block([ 4, 3, 5 ]),
             [ PrototyperSpec.BLOCK_2 ]: as.Block([ 0, 9, 2 ]),
@@ -75,8 +75,8 @@ describe('validations', () => {
             })
     })
 
-    describe('un-parseable scalar strings', () => {
-        it('rejects scalar strings with more than one fraction sign', () => {
+    describe('un-parseable scalar strings', (): void => {
+        it('rejects scalar strings with more than one fraction sign', (): void => {
             const specs: PrototyperSpecs = {
                 [ PrototyperSpec.BLOCK_1 ]: as.Block([]),
                 [ PrototyperSpec.BLOCK_2 ]: as.Block([]),
